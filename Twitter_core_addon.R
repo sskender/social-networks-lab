@@ -20,7 +20,7 @@ library(base64enc)
 
 rm(list=ls())
 getwd()
-setwd("/Users/svenskender/Downloads")
+setwd("/Users/svenskender/Downloads/lab2")
 
 setup_twitter_oauth(consumer_key = 'PtWAIpoHAa0P3AuiSnPlZG0Bb',
                     consumer_secret = 'exDXs0dP5uDhjlIByZ0LZ0idQfQrdFhg9M8uP1d38kvUJ21Vnr',
@@ -76,6 +76,7 @@ myCorpus <- tm_map(myCorpus,Textprocessing)
 myCorpus <- tm_map(myCorpus, stripWhitespace)
 # remove stop words
 myCorpus <- tm_map(myCorpus, removeWords, stopwords("english"))
+myCorpus <- tm_map(myCorpus, removeWords, stopwords("german"))
 #--------------------------------------------------------------------------------
 library(wordcloud)
 
