@@ -22,10 +22,10 @@ rm(list=ls())
 getwd()
 setwd("/Users/svenskender/Downloads/lab2")
 
-setup_twitter_oauth(consumer_key = 'PtWAIpoHAa0P3AuiSnPlZG0Bb',
-                    consumer_secret = 'exDXs0dP5uDhjlIByZ0LZ0idQfQrdFhg9M8uP1d38kvUJ21Vnr',
-                    access_token ='1448203529173278723-8bX7Z1ThYOCPbZlt1nZWS43U0wtgiF',
-                    access_secret ='KA7Ypf9xuEWzr30zCgjsFekRe0IUgYTdNhHNF1RS8ZbMx')
+setup_twitter_oauth(consumer_key = '',
+                    consumer_secret = '',
+                    access_token ='',
+                    access_secret ='')
 
 
 user <- getUser("@a_schallenberg")
